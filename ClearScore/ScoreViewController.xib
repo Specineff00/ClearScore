@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreViewController" customModule="ClearScore" customModuleProvider="target">
+            <connections>
+                <outlet property="scoreLabel" destination="45x-cf-23n" id="mG6-iA-5kT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duW-m6-0Sa">
+                    <rect key="frame" x="17" y="263" width="380" height="380"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6s-ct-P4d">
+                            <rect key="frame" x="72.5" y="72.5" width="235" height="235"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0i-9B-ITy">
+                                    <rect key="frame" x="96.5" y="25" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vt-FK-mQ5">
+                                    <rect key="frame" x="96.5" y="204" width="42" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45x-cf-23n">
+                                    <rect key="frame" x="79" y="64" width="77" height="107"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="107" id="Iv6-Rm-rXa"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="G6s-ct-P4d" secondAttribute="height" multiplier="1:1" id="6JH-43-4E8"/>
+                                <constraint firstItem="B0i-9B-ITy" firstAttribute="centerX" secondItem="45x-cf-23n" secondAttribute="centerX" id="8Ps-1u-9Un"/>
+                                <constraint firstAttribute="width" constant="235" id="Bxi-sm-Bqe"/>
+                                <constraint firstItem="45x-cf-23n" firstAttribute="centerX" secondItem="G6s-ct-P4d" secondAttribute="centerX" id="I8u-4d-p7k"/>
+                                <constraint firstItem="6vt-FK-mQ5" firstAttribute="centerX" secondItem="45x-cf-23n" secondAttribute="centerX" id="Zhs-oe-vrf"/>
+                                <constraint firstItem="45x-cf-23n" firstAttribute="centerY" secondItem="G6s-ct-P4d" secondAttribute="centerY" id="amr-pq-c8P"/>
+                                <constraint firstItem="45x-cf-23n" firstAttribute="top" secondItem="B0i-9B-ITy" secondAttribute="bottom" constant="18" id="eeQ-Xz-551"/>
+                                <constraint firstItem="6vt-FK-mQ5" firstAttribute="top" secondItem="45x-cf-23n" secondAttribute="bottom" constant="33" id="wIm-00-ThT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="G6s-ct-P4d" firstAttribute="centerX" secondItem="duW-m6-0Sa" secondAttribute="centerX" id="IuF-AU-rYi"/>
+                        <constraint firstAttribute="width" secondItem="duW-m6-0Sa" secondAttribute="height" multiplier="1:1" id="bpV-2O-Y4e"/>
+                        <constraint firstItem="G6s-ct-P4d" firstAttribute="centerY" secondItem="duW-m6-0Sa" secondAttribute="centerY" id="jvf-p4-Woz"/>
+                        <constraint firstAttribute="width" constant="380" id="liC-sB-hP2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="duW-m6-0Sa" firstAttribute="width" secondItem="duW-m6-0Sa" secondAttribute="height" multiplier="1:1" id="Twc-u7-w37"/>
+                <constraint firstItem="duW-m6-0Sa" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="iF1-Fc-zYI"/>
+                <constraint firstItem="duW-m6-0Sa" firstAttribute="width" secondItem="duW-m6-0Sa" secondAttribute="height" multiplier="1:1" id="tjY-9I-jTw"/>
+                <constraint firstItem="duW-m6-0Sa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yMD-ST-QMB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
