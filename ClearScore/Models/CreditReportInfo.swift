@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CreditScore: Decodable {
+class CreditReportInfo: Decodable {
     let score: Int
     let maxScore: Int
     let minScore: Int
@@ -22,7 +22,7 @@ class CreditScore: Decodable {
     enum CodingKeys: String, CodingKey {
         case score
         case maxScore = "maxScoreValue"
-        case minScore = "minScore"
+        case minScore = "minScoreValue"
     }
     
     required convenience init(from decoder: Decoder) throws {

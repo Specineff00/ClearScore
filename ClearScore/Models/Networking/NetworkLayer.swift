@@ -9,7 +9,7 @@
 import Foundation
 
 typealias CompletionClosure = (Result<(URLResponse, Data), Error>) -> Void
-typealias CreditScoreClosure = (CSResult<CreditScore>) -> Void
+typealias CreditScoreClosure = (CSResult<CreditReportInfo>) -> Void
 
 enum CSResult<T> {
     case success(T)
@@ -51,7 +51,7 @@ class NetworkLayer: NetworkLayerContract {
                 case .success(_, let data):
                     do {
                         let creditReport = try JSONDecoder().decode(CreditReport.self, from: data)
-                        onCompletion(.success(creditReport.creditScore))
+                        onCompletion(.success(creditReport.creditReportInfo))
                     } catch {
                         onCompletion(.failure(CSError.decodeError))
                     }

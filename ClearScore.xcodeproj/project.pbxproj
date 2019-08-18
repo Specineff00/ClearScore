@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,15 +14,18 @@
 		3351DFCE2309597A00CD1491 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351DFCD2309597A00CD1491 /* ScoreViewModel.swift */; };
 		3351DFD023095ABD00CD1491 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3351DFCF23095ABD00CD1491 /* NetworkLayer.swift */; };
 		3389FA6222F5FE1C008F97DC /* URLSession+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389FA6122F5FE1C008F97DC /* URLSession+Additions.swift */; };
+		3394592C23097F1C00E120C2 /* CreditReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394592B23097F1B00E120C2 /* CreditReport.swift */; };
+		3394592E230982D900E120C2 /* ScoreViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394592D230982D900E120C2 /* ScoreViewModelTests.swift */; };
+		339459302309834B00E120C2 /* MockDataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394592F2309834B00E120C2 /* MockDataAccessObject.swift */; };
+		3394594A2309912600E120C2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339459492309912500E120C2 /* CircleView.swift */; };
 		CB9B354422F1D57B00E12C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B354322F1D57B00E12C75 /* AppDelegate.swift */; };
 		CB9B354B22F1D57C00E12C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9B354A22F1D57C00E12C75 /* Assets.xcassets */; };
 		CB9B354E22F1D57C00E12C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9B354C22F1D57C00E12C75 /* LaunchScreen.storyboard */; };
 		CB9B355922F1D57C00E12C75 /* ClearScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B355822F1D57C00E12C75 /* ClearScoreTests.swift */; };
 		CB9B356422F1D57C00E12C75 /* ClearScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B356322F1D57C00E12C75 /* ClearScoreUITests.swift */; };
-		CB9B357222F1D7BF00E12C75 /* Localisable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB9B357122F1D7BF00E12C75 /* Localisable.strings */; };
+		CB9B357222F1D7BF00E12C75 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB9B357122F1D7BF00E12C75 /* Localizable.strings */; };
 		CB9B357422F1E08900E12C75 /* DataAccessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B357322F1E08900E12C75 /* DataAccessObject.swift */; };
-		CB9B357622F1ECE800E12C75 /* CreditReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B357522F1ECE800E12C75 /* CreditReport.swift */; };
-		CB9B357822F1EDDC00E12C75 /* CreditScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B357722F1EDDC00E12C75 /* CreditScore.swift */; };
+		CB9B357822F1EDDC00E12C75 /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9B357722F1EDDC00E12C75 /* CreditReportInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,10 @@
 		3351DFCD2309597A00CD1491 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		3351DFCF23095ABD00CD1491 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		3389FA6122F5FE1C008F97DC /* URLSession+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Additions.swift"; sourceTree = "<group>"; };
+		3394592B23097F1B00E120C2 /* CreditReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditReport.swift; sourceTree = "<group>"; };
+		3394592D230982D900E120C2 /* ScoreViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModelTests.swift; sourceTree = "<group>"; };
+		3394592F2309834B00E120C2 /* MockDataAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataAccessObject.swift; sourceTree = "<group>"; };
+		339459492309912500E120C2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		CB9B354022F1D57B00E12C75 /* ClearScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClearScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B354322F1D57B00E12C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9B354A22F1D57C00E12C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,10 +68,9 @@
 		CB9B355F22F1D57C00E12C75 /* ClearScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClearScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9B356322F1D57C00E12C75 /* ClearScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearScoreUITests.swift; sourceTree = "<group>"; };
 		CB9B356522F1D57C00E12C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB9B357122F1D7BF00E12C75 /* Localisable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localisable.strings; sourceTree = "<group>"; };
+		CB9B357122F1D7BF00E12C75 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CB9B357322F1E08900E12C75 /* DataAccessObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessObject.swift; sourceTree = "<group>"; };
-		CB9B357522F1ECE800E12C75 /* CreditReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReport.swift; sourceTree = "<group>"; };
-		CB9B357722F1EDDC00E12C75 /* CreditScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScore.swift; sourceTree = "<group>"; };
+		CB9B357722F1EDDC00E12C75 /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2ECA9A70924BC97BEB577B91 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		3351DFCC2309594800CD1491 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +107,25 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		339459262309710900E120C2 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				3351DFC82309593800CD1491 /* ScoreViewController.swift */,
+				3351DFCD2309597A00CD1491 /* ScoreViewModel.swift */,
+				3351DFC92309593800CD1491 /* ScoreViewController.xib */,
+				3394594B2309949B00E120C2 /* Views */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		3394594B2309949B00E120C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				339459492309912500E120C2 /* CircleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CB9B353722F1D57B00E12C75 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +133,6 @@
 				CB9B355722F1D57C00E12C75 /* ClearScoreTests */,
 				CB9B356222F1D57C00E12C75 /* ClearScoreUITests */,
 				CB9B354122F1D57B00E12C75 /* Products */,
-				2ECA9A70924BC97BEB577B91 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,13 +151,10 @@
 			children = (
 				CB9B354322F1D57B00E12C75 /* AppDelegate.swift */,
 				3351DFCC2309594800CD1491 /* Coordinators */,
-				3351DFC82309593800CD1491 /* ScoreViewController.swift */,
-				3351DFCD2309597A00CD1491 /* ScoreViewModel.swift */,
-				3351DFC92309593800CD1491 /* ScoreViewController.xib */,
-				CB9B357A22F1F20100E12C75 /* Networking */,
 				CB9B357922F1F1F500E12C75 /* Models */,
+				339459262309710900E120C2 /* Score */,
 				CB9B354A22F1D57C00E12C75 /* Assets.xcassets */,
-				CB9B357122F1D7BF00E12C75 /* Localisable.strings */,
+				CB9B357122F1D7BF00E12C75 /* Localizable.strings */,
 				CB9B354C22F1D57C00E12C75 /* LaunchScreen.storyboard */,
 				CB9B354F22F1D57C00E12C75 /* Info.plist */,
 			);
@@ -151,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				CB9B355822F1D57C00E12C75 /* ClearScoreTests.swift */,
+				3394592D230982D900E120C2 /* ScoreViewModelTests.swift */,
+				3394592F2309834B00E120C2 /* MockDataAccessObject.swift */,
 				CB9B355A22F1D57C00E12C75 /* Info.plist */,
 			);
 			path = ClearScoreTests;
@@ -168,8 +184,9 @@
 		CB9B357922F1F1F500E12C75 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CB9B357522F1ECE800E12C75 /* CreditReport.swift */,
-				CB9B357722F1EDDC00E12C75 /* CreditScore.swift */,
+				CB9B357A22F1F20100E12C75 /* Networking */,
+				CB9B357722F1EDDC00E12C75 /* CreditReportInfo.swift */,
+				3394592B23097F1B00E120C2 /* CreditReport.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,7 +308,7 @@
 				3351DFCB2309593800CD1491 /* ScoreViewController.xib in Resources */,
 				CB9B354E22F1D57C00E12C75 /* LaunchScreen.storyboard in Resources */,
 				CB9B354B22F1D57C00E12C75 /* Assets.xcassets in Resources */,
-				CB9B357222F1D7BF00E12C75 /* Localisable.strings in Resources */,
+				CB9B357222F1D7BF00E12C75 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,11 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3351DFCE2309597A00CD1491 /* ScoreViewModel.swift in Sources */,
-				CB9B357622F1ECE800E12C75 /* CreditReport.swift in Sources */,
-				CB9B357822F1EDDC00E12C75 /* CreditScore.swift in Sources */,
+				CB9B357822F1EDDC00E12C75 /* CreditReportInfo.swift in Sources */,
 				3351DFC7230958ED00CD1491 /* ScoreCoordinator.swift in Sources */,
 				3351DFD023095ABD00CD1491 /* NetworkLayer.swift in Sources */,
+				3394592C23097F1C00E120C2 /* CreditReport.swift in Sources */,
 				3389FA6222F5FE1C008F97DC /* URLSession+Additions.swift in Sources */,
+				3394594A2309912600E120C2 /* CircleView.swift in Sources */,
 				CB9B354422F1D57B00E12C75 /* AppDelegate.swift in Sources */,
 				3351DFCA2309593800CD1491 /* ScoreViewController.swift in Sources */,
 				CB9B357422F1E08900E12C75 /* DataAccessObject.swift in Sources */,
@@ -334,6 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9B355922F1D57C00E12C75 /* ClearScoreTests.swift in Sources */,
+				339459302309834B00E120C2 /* MockDataAccessObject.swift in Sources */,
+				3394592E230982D900E120C2 /* ScoreViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

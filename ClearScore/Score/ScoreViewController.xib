@@ -12,7 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreViewController" customModule="ClearScore" customModuleProvider="target">
             <connections>
+                <outlet property="bottomLabel" destination="6vt-FK-mQ5" id="9H2-Hs-nd4"/>
+                <outlet property="containerView" destination="G6s-ct-P4d" id="Uup-fI-lhp"/>
+                <outlet property="scoreButton" destination="JwZ-dr-y2E" id="abE-9d-xRn"/>
                 <outlet property="scoreLabel" destination="45x-cf-23n" id="mG6-iA-5kT"/>
+                <outlet property="topLabel" destination="B0i-9B-ITy" id="oOR-S8-4CX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -49,7 +53,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="0.66660696268081665" green="0.66670489311218262" blue="0.66658556461334229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="G6s-ct-P4d" secondAttribute="height" multiplier="1:1" id="6JH-43-4E8"/>
                                 <constraint firstItem="B0i-9B-ITy" firstAttribute="centerX" secondItem="45x-cf-23n" secondAttribute="centerX" id="8Ps-1u-9Un"/>
@@ -70,11 +74,25 @@
                         <constraint firstAttribute="width" constant="380" id="liC-sB-hP2"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwZ-dr-y2E">
+                    <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.79335841470000001" blue="0.31613781429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1ew-B4-gyw"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="scoreButtonTapped:" destination="-1" eventType="touchUpInside" id="hUC-ra-SPd"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JwZ-dr-y2E" secondAttribute="trailing" id="1gi-vx-2yG"/>
+                <constraint firstItem="JwZ-dr-y2E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KJT-QM-PiL"/>
                 <constraint firstItem="duW-m6-0Sa" firstAttribute="width" secondItem="duW-m6-0Sa" secondAttribute="height" multiplier="1:1" id="Twc-u7-w37"/>
-                <constraint firstItem="duW-m6-0Sa" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="iF1-Fc-zYI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JwZ-dr-y2E" secondAttribute="bottom" id="aem-94-sHk"/>
+                <constraint firstItem="duW-m6-0Sa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="5" id="iF1-Fc-zYI"/>
                 <constraint firstItem="duW-m6-0Sa" firstAttribute="width" secondItem="duW-m6-0Sa" secondAttribute="height" multiplier="1:1" id="tjY-9I-jTw"/>
                 <constraint firstItem="duW-m6-0Sa" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yMD-ST-QMB"/>
             </constraints>

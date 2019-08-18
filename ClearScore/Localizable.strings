@@ -8,6 +8,9 @@
 
 
 "top_label" = "Your credit score is";
-"bottom_label" = "out of 700";
+"bottom_label" = "out of ";
+"score_button" = "Get my score!";
 
-
+"unknown_error" = "Unknown error";
+"server_error" = "Server error";
+"decode_error" = "Decode error";

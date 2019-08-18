@@ -9,6 +9,5 @@
 import Foundation
 
 class CreditReport: Decodable {
-    let creditScore: CreditScore
+    let creditReportInfo: CreditReportInfo
 }
-
